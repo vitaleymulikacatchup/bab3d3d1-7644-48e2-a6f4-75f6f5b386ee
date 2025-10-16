@@ -51,8 +51,8 @@ export default function Home() {
           <FeatureCardTwo
             title="Our Features"
             features={[
-              { title: "Advanced Analytics", description: "In-depth performance insights.", icon: "Package" },
-              { title: "Custom Dashboards", description: "Personalize your workspace.", icon: "Package" }
+              { title: "Advanced Analytics", description: "In-depth performance insights.", icon: Zap },
+              { title: "Custom Dashboards", description: "Personalize your workspace.", icon: CheckCircle }
             ]}
           />
         </div>
