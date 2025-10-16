@@ -7,14 +7,13 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-
+import { Zap, CheckCircle } from 'lucide-react';
 const assetMap = [
   { "id": "hero-image", "url": "https://images.pexels.com/photos/6779716/pexels-photo-6779716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Two professionals collaborating on financial documents in a modern office setting." },
   { "id": "about-image", "url": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Top view of a diverse team collaborating in an office setting with laptops and tablets, promoting cooperation." },
   { "id": "feature-image", "url": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Close-up of a smartphone screen showing various social media app icons such as Facebook and Twitter." },
   { "id": "product-image", "url": "https://images.pexels.com/photos/9558567/pexels-photo-9558567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Front view of woman wearing black t-shirt with copy space on white background." }
 ];
-
 export default function Home() {
   return (
     <ThemeProvider
@@ -40,8 +39,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: "Innovation", description: "Constantly evolving.", icon: "Zap" },
-              { title: "Reliability", description: "Trustworthy systems.", icon: "CheckCircle" }
+              { title: "Innovation", description: "Constantly evolving.", icon: Zap },
+              { title: "Reliability", description: "Trustworthy systems.", icon: CheckCircle }
             ]}
             imageSrc={assetMap.find(a => a.id === 'about-image')?.url}
           />
